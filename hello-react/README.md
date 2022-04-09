@@ -1,6 +1,6 @@
 # Hello Web App
 
-This is the front-end of the Hello Web App. Back-end repo is [here](https://github.com/Maclenn77/hellor-rails)
+This is the front-end of the Hello Web App. Back-end repo is [here](https://github.com/Maclenn77/hello-rails)
 
 ## About
 
