@@ -14,9 +14,10 @@ const HelloWorld = () => {
     <main>
       <h1>{greeting.greeting}</h1>
       <p>
-        A greeting in
+        A greeting in&nbsp;
         {greeting.language}
       </p>
+
     </main>
   );
 };
