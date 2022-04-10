@@ -1,27 +1,24 @@
-import React from "react"
-import PropTypes from "prop-types"
+import React from 'react';
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import store from './redux/store';
 import { Provider } from 'react-redux';
+import store from './redux/store';
 
-import HelloWorld from "./components/HelloWorld";
+import HelloWorld from './components/HelloWorld';
 
-
-class App extends React.Component {
-  render () {
+class App extends React.PureComponent {
+  render() {
     return (
       <Provider store={store}>
-       <Router>
-         <Routes>
-            <Route exact path="/" element={(<h2>Welcome to Greeting App!</h2>)} />
-            <Route exact path="/hello" element={<HelloWorld />} />
-         </Routes>
-       </Router>
+        <Router>
+          <Routes>
+            <Route exact path="/" element={<HelloWorld />} />
+          </Routes>
+        </Router>
       </Provider>
     );
   }
 }
 
-export default App
+export default App;

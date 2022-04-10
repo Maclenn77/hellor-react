@@ -1,10 +1,8 @@
-import React, { useEffect } from "react"
-import {useSelector, useDispatch} from 'react-redux';
-import PropTypes from "prop-types"
-import { getGreeting } from "../redux/api_handler";
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { getGreeting } from '../redux/api_handler';
 
 const HelloWorld = () => {
-
   const dispatch = useDispatch();
   const greeting = useSelector((state) => state.greeting);
 
@@ -15,15 +13,13 @@ const HelloWorld = () => {
   return (
     <main>
       <h1>{greeting.greeting}</h1>
-      <p>A greeting in {greeting.language}</p>
-      <button ></button>
+      <p>
+        A greeting in&nbsp;
+        {greeting.language}
+      </p>
+
     </main>
-    );
-}
-
-
-HelloWorld.propTypes = {
-  greeting: PropTypes.string
+  );
 };
 
-export default HelloWorld
+export default HelloWorld;
